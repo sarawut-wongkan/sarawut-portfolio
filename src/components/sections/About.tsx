@@ -3,10 +3,6 @@ import { motion } from "framer-motion";
 const details = [
   {
     title: "Education",
-    value: "Bachelor of Engineering",
-  },
-  {
-    title: "Major",
     value: "Computer Engineering",
   },
   {
@@ -19,17 +15,14 @@ const details = [
   },
   {
     title: "Focus",
-    value: "Software Development, Web, Mobile, AI & IoT",
+    value: "Software Development",
   },
 ];
 
 
 function About() {
   return (
-    <section
-      id="about"
-      className="scroll-mt-24 bg-black px-6 py-24 md:px-20"
-    >
+    <section id="about" className="scroll-mt-24 px-6 py-20">
 
       <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2">
 
@@ -42,15 +35,9 @@ function About() {
           viewport={{ once: true }}
         >
 
-          <p className="text-green-500">
+          <h2 className="text-4xl font-bold">
             About Me
-          </p>
-
-
-          <h2 className="mt-3 text-4xl font-bold text-white md:text-5xl">
-            Who I Am
           </h2>
-
 
 
           <p className="mt-6 leading-8 text-zinc-300">
@@ -63,30 +50,18 @@ function About() {
           </p>
 
 
-
           <p className="mt-4 leading-8 text-zinc-300">
 
-            I have a passion for software development
-            and emerging technologies. My interests
-            include web applications, mobile development,
-            backend systems, artificial intelligence,
-            and IoT solutions.
-
-          </p>
-
-
-
-          <p className="mt-4 leading-8 text-zinc-300">
-
-            I enjoy transforming ideas into practical
-            applications and continuously improving my
-            programming and engineering skills.
+            I am interested in software development,
+            mobile applications, backend systems,
+            and IoT technologies. I enjoy learning
+            new technologies and creating solutions
+            that solve real-world problems.
 
           </p>
 
 
         </motion.div>
-
 
 
 
@@ -103,14 +78,7 @@ function About() {
 
             <div
               key={item.title}
-              className="
-              rounded-xl 
-              border border-zinc-800
-              bg-zinc-900/50
-              p-5
-              transition
-              hover:border-green-600
-              "
+              className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5"
             >
 
               <p className="text-sm text-green-500">
@@ -126,6 +94,7 @@ function About() {
             </div>
 
           ))}
+
 
         </motion.div>
 

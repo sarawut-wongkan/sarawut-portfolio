@@ -64,7 +64,7 @@ const skillGroups = [
 
 function Skills() {
   return (
-    <section id="skills" className="scroll-mt-24 px-6 py-20">
+    <section id="skills" className="scroll-mt-2 px-6 py-20">
       <div className="mx-auto max-w-7xl">
 
         <motion.h2
