@@ -94,7 +94,7 @@ function Hero() {
               href="/Resume.png"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-green-600 px-6 py-3 font-medium text-green-500 transition hover:bg-green-600 hover:text-black"
+              className="rounded-lg bg-green-700 px-6 py-3 font-medium transition hover:bg-green-600"
             >
               Resume
             </a>
@@ -105,7 +105,7 @@ function Hero() {
               href="https://github.com/sarawut-wongkan"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-zinc-700 px-6 py-3 transition hover:border-green-500 hover:text-green-500"
+              className="rounded-lg bg-green-700 px-6 py-3 font-medium transition hover:bg-green-600"
             >
               GitHub
             </a>
