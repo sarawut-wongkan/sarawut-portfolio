@@ -17,7 +17,7 @@ const contacts = [
 
   {
     title: "GitHub",
-    detail: "github.com/yourusername",
+    detail: "github.com/sarawut-wongkan",
     link: "https://github.com/",
     icon: FaGithub,
   },
