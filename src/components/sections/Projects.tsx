@@ -1,159 +1,218 @@
 import { motion } from "framer-motion";
 
 import {
-  SiFlutter,
-  SiFirebase,
-  SiNodedotjs,
-  SiArduino,
   SiPython,
-  SiTensorflow,
+  SiJavascript,
+  SiPhp,
+  SiCplusplus,
   SiReact,
+  SiHtml5,
+  SiTailwindcss,
+  SiMysql,
+  SiFirebase,
+  SiGithub,
+  SiArduino,
+  SiFigma,
+  SiFlutter,
+  SiNodedotjs,
+  SiDocker,
 } from "react-icons/si";
 
+import {
+  FaCss3Alt,
+  FaCode,
+} from "react-icons/fa";
 
-const projects = [
+
+const skillGroups = [
+
   {
-    title: "BUDGETMATE",
-    status: "Final Project",
-    description:
-      "A personal finance management application that helps users record income, expenses, manage budgets, and track saving goals.",
-    technologies: [
-      {
-        name: "Flutter",
-        icon: SiFlutter,
-      },
-      {
-        name: "Firebase",
-        icon: SiFirebase,
-      },
-      {
-        name: "Node.js",
-        icon: SiNodedotjs,
-      },
+    title: "Programming Languages",
+    skills: [
+      { name: "Python", icon: SiPython },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "PHP", icon: SiPhp },
+      { name: "C/C++", icon: SiCplusplus },
     ],
-    github: "#",
   },
 
 
   {
-    title: "Black Soldier Fly Larvae Waste Management Research",
-    status: "Research Project",
-    description:
-      "A research project studying optimal waste layer thickness for Black Soldier Fly Larvae growth and organic waste reduction.",
-    technologies: [
-      {
-        name: "Python",
-        icon: SiPython,
-      },
-      {
-        name: "TensorFlow",
-        icon: SiTensorflow,
-      },
+    title: "Frontend Development",
+    skills: [
+      { name: "React", icon: SiReact },
+      { name: "HTML", icon: SiHtml5 },
+      { name: "CSS", icon: FaCss3Alt },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "Flutter", icon: SiFlutter },
     ],
-    github: "#",
   },
 
 
   {
-    title: "IoT Monitoring System",
-    status: "Embedded System",
-    description:
-      "An IoT monitoring system using sensors to collect environmental data and display real-time information.",
-    technologies: [
-      {
-        name: "Arduino",
-        icon: SiArduino,
-      },
-      {
-        name: "React",
-        icon: SiReact,
-      },
+    title: "Backend & Database",
+    skills: [
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "MySQL", icon: SiMysql },
+      { name: "Firebase", icon: SiFirebase },
     ],
-    github: "#",
   },
+
+
+  {
+    title: "Tools & Platforms",
+    skills: [
+      { name: "GitHub", icon: SiGithub },
+      { name: "VS Code", icon: FaCode },
+      { name: "Arduino", icon: SiArduino },
+      { name: "Figma", icon: SiFigma },
+      { name: "Docker", icon: SiDocker },
+    ],
+  },
+
 ];
 
 
-function Projects() {
+
+function Skills() {
+
   return (
-    <section id="projects" className="scroll-mt-24 px-6 py-20">
+
+    <section
+      id="skills"
+      className="scroll-mt-24 bg-black px-6 py-24 md:px-20"
+    >
 
       <div className="mx-auto max-w-7xl">
 
 
-        <motion.h2
+        {/* Header */}
+
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold"
         >
-          Projects
-        </motion.h2>
+
+          <p className="text-green-500">
+            Skills
+          </p>
+
+
+          <h2 className="mt-3 text-4xl font-bold text-white md:text-5xl">
+            Technical Skills
+          </h2>
+
+
+          <p className="mt-4 text-zinc-400">
+            Technologies and tools I use for software development.
+          </p>
+
+        </motion.div>
 
 
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+
+        {/* Skill Cards */}
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
 
 
-          {projects.map((project, index) => (
+          {skillGroups.map((group, index) => (
 
             <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+
+              key={group.title}
+
+              initial={{
+                opacity: 0,
+                y: 30
+              }}
+
+              whileInView={{
+                opacity: 1,
+                y: 0
+              }}
+
               transition={{
                 duration: 0.5,
-                delay: index * 0.1,
+                delay: index * 0.1
               }}
-              viewport={{ once: true }}
-              className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 transition hover:-translate-y-2 hover:border-green-500"
+
+              viewport={{
+                once: true
+              }}
+
+              className="
+              rounded-xl
+              border
+              border-zinc-800
+              bg-zinc-900/50
+              p-6
+              transition
+              hover:border-green-600
+              "
+
             >
 
 
-              {/* Status */}
-
-              <p className="text-sm text-green-500">
-                {project.status}
-              </p>
-
-
-
-              {/* Title */}
-
-              <h3 className="mt-3 text-xl font-semibold">
-                {project.title}
+              <h3 className="
+              text-xl
+              font-semibold
+              text-green-500
+              ">
+                {group.title}
               </h3>
 
 
 
-              {/* Description */}
 
-              <p className="mt-4 leading-7 text-zinc-300">
-                {project.description}
-              </p>
+              <div className="
+              mt-5
+              grid
+              grid-cols-2
+              gap-4
+              ">
 
 
+                {group.skills.map((skill) => {
 
-              {/* Technology */}
 
-              <div className="mt-6 flex flex-wrap gap-3">
-
-                {project.technologies.map((tech) => {
-
-                  const Icon = tech.icon;
+                  const Icon = skill.icon;
 
 
                   return (
 
                     <div
-                      key={tech.name}
-                      className="flex items-center gap-2 rounded-lg bg-zinc-800 px-3 py-2 text-sm"
+
+                      key={skill.name}
+
+                      className="
+                      flex
+                      items-center
+                      gap-3
+                      rounded-lg
+                      bg-zinc-800
+                      p-3
+                      transition
+                      hover:bg-zinc-700
+                      "
+
                     >
 
-                      <Icon className="text-green-500" />
+                      <Icon
+                        className="
+                        text-2xl
+                        text-green-500
+                        "
+                      />
 
-                      {tech.name}
+
+                      <span className="text-zinc-200">
+                        {skill.name}
+                      </span>
+
 
                     </div>
 
@@ -161,21 +220,6 @@ function Projects() {
 
                 })}
 
-
-              </div>
-
-
-
-              {/* Button */}
-
-              <div className="mt-6">
-
-                <a
-                  href={project.github}
-                  className="inline-block rounded-lg border border-zinc-700 px-4 py-2 text-sm transition hover:border-green-500 hover:text-green-500"
-                >
-                  GitHub
-                </a>
 
               </div>
 
@@ -190,9 +234,12 @@ function Projects() {
 
       </div>
 
+
     </section>
+
   );
+
 }
 
 
-export default Projects;
+export default Skills;

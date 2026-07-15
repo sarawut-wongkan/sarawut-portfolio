@@ -18,47 +18,89 @@ function Navbar() {
 
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur">
+
+    <nav
+      className="
+      fixed 
+      left-0 
+      right-0 
+      top-0 
+      z-50
+      border-b 
+      border-zinc-800
+      bg-black/70
+      backdrop-blur-lg
+      "
+    >
+
 
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
 
 
         {/* Logo */}
+
         <a
           href="#"
-          className="text-xl font-bold transition hover:text-green-500"
+          className="
+          text-2xl 
+          font-bold 
+          tracking-wide
+          transition
+          hover:text-green-500
+          "
         >
-          <span className="text-green-600">
+
+          <span className="text-green-500">
             S
           </span>
           W
+
         </a>
 
 
 
         {/* Desktop Menu */}
-        <div className="hidden gap-8 text-sm text-zinc-400 md:flex">
+
+        <div className="hidden items-center gap-8 text-sm text-zinc-400 md:flex">
 
           {menuItems.map((item) => (
+
             <a
               key={item.name}
               href={item.link}
-              className="transition hover:text-green-500"
+              className="
+              transition
+              hover:text-green-500
+              "
             >
+
               {item.name}
+
             </a>
+
           ))}
+
 
         </div>
 
 
 
+
         {/* Mobile Button */}
+
         <button
-          className="text-2xl text-zinc-300 md:hidden"
+          className="
+          text-2xl
+          text-zinc-300
+          transition
+          hover:text-green-500
+          md:hidden
+          "
           onClick={() => setOpen(!open)}
         >
+
           {open ? <HiX /> : <HiMenu />}
+
         </button>
 
 
@@ -66,12 +108,24 @@ function Navbar() {
 
 
 
+
       {/* Mobile Menu */}
+
       {open && (
 
-        <div className="border-t border-zinc-800 bg-zinc-950 px-6 py-5 md:hidden">
+        <div
+          className="
+          border-t
+          border-zinc-800
+          bg-black
+          px-6
+          py-6
+          md:hidden
+          "
+        >
 
-          <div className="flex flex-col gap-5 text-zinc-400">
+          <div className="flex flex-col gap-5">
+
 
             {menuItems.map((item) => (
 
@@ -79,12 +133,19 @@ function Navbar() {
                 key={item.name}
                 href={item.link}
                 onClick={() => setOpen(false)}
-                className="transition hover:text-green-500"
+                className="
+                text-zinc-400
+                transition
+                hover:text-green-500
+                "
               >
+
                 {item.name}
+
               </a>
 
             ))}
+
 
           </div>
 
@@ -94,7 +155,9 @@ function Navbar() {
 
 
     </nav>
+
   );
 }
+
 
 export default Navbar;
