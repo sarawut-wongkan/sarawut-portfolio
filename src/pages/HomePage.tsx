@@ -14,8 +14,8 @@ function HomePage() {
       <About />
       <Projects />
       <Education />
-      <Skills />
       <Experience />
+      <Skills />
       <Contact />
     </>
   );
