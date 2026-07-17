@@ -91,7 +91,7 @@ function Hero() {
 
 
             <a
-              href="/Resume.png"
+              href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg bg-green-700 px-6 py-3 font-medium transition hover:bg-green-600"

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import {
   FaEnvelope,
   FaGithub,
-  FaLinkedin,
+  FaPhone,
 } from "react-icons/fa";
 
 
@@ -16,18 +16,19 @@ const contacts = [
   },
 
   {
-    title: "GitHub",
-    detail: "github.com/sarawut-wongkan",
-    link: "https://github.com/",
-    icon: FaGithub,
+    title: "Phone",
+    detail: "099-492-6397",
+    link: "tel:+66994926397",
+    icon: FaPhone,
   },
 
   {
-    title: "LinkedIn",
-    detail: "linkedin.com/in/yourprofile",
-    link: "#",
-    icon: FaLinkedin,
+    title: "GitHub",
+    detail: "github.com/sarawut-wongkan",
+    link: "https://github.com/sarawut-wongkan?tab=repositories",
+    icon: FaGithub,
   },
+
 ];
 
 

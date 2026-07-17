@@ -4,7 +4,7 @@ const projects = [
   {
     title: "BUDGETMATE",
     description:
-      "A personal finance management application designed to help users track income, expenses, budgets, and saving goals.",
+      "Developed a personal finance management application that enables users to efficiently track income and expenses while providing comprehensive financial insights through daily, monthly, and yearly analytics. The application includes budget planning and financial monitoring features, with Firebase used for data storage and real-time synchronization, helping users manage their finances more effectively and make informed financial decisions.",
     technologies: [
       "Flutter",
       "Firebase",
@@ -12,23 +12,26 @@ const projects = [
     ],
   },
   {
-    title: "Black Soldier Fly Larvae Waste Management Research",
+    title: "KU NextGen X Ai ",
     description:
-      "A research project focused on optimizing organic waste layer thickness for Black Soldier Fly Larvae growth and waste reduction.",
+      "Developed an AI-powered web application that transforms PDF documents into concise and easy-to-understand study notes using AI-driven text summarization. The application integrates AI services to generate accurate summaries from uploaded academic materials, enabling users to quickly grasp key concepts while significantly reducing the time required to read and review lengthy documents, ultimately improving learning efficiency.",
     technologies: [
-      "Research",
-      "Data Analysis",
-      "Environmental Technology",
+      "React",
+      "JavaScript",
+      "CSS",
+      "AI API",
     ],
   },
   {
-    title: "IoT Monitoring System",
+    title: "GradieKU",
     description:
-      "An IoT-based monitoring system using sensors to collect environmental data and display real-time information.",
+      "Developed a web application that enables students to verify completed courses and accumulated credits based on the official university curriculum. The application features a responsive user interface and integrates backend services with MySQL to manage academic records efficiently. By providing an organized view of course progress and credit requirements, it helps students plan their studies more effectively and track their progress toward graduation.",
     technologies: [
-      "Arduino",
-      "DHT22",
-      "OLED Display",
+      "React",
+      "JavaScript",
+      "CSS",
+      "PHP",
+      "MySQL",
     ],
   },
 ];
